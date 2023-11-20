@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es2015",  
+    //Esta opción sirve para indicar el entorno ECMASCript al que se dirige el código TS. En este caso está dirigido para ECMAScript 2015, también llamado ES6. 
+    "module": "commonjs", 
+    // Con module especificamos el sistema de módulos que se utilizará después de la compilación. En este caso, se está utilizando el sistema de módulos CommonJS, que es común en entornos de servidor como Node.js. 
+    "outDir": "./dist",   
+// Aquí especificamos dónde se va a exportar los archivos compilados. En este caso se colocan en la carpeta "./dist". 
+    "rootDir": "./src", 
+// Indica la ubicación de la raíz de los archivos fuente TypeScript. En este caso, los archivos TypeScript se ubvican en el directorio "./src".
+
+    "strict": true,
+// Habilita todas las opciones de tipo estricto. Aunque de base TS realiza comprobaciones sobre los tipos de las clases, hay algunas que no se comprueban de manera determinada. Si habilitamos esta opción,TS aplica configuraciones más estrictas relacionadas con los tipos, como variables null o undefined.
+
+    "incremental": true,
+// Cuando habilitamos esta opción, a la hora de compilar el código no se compila todo una y otra vez, sino que solo se compilan aquellos archivos que han sufrido modificaciones desde la última compilación. Así se evita tener que pasar por todos los archivos una y otra vez y se hace más rápido. 
+
+    "tsBuildInfoFile": "./buildcache",
+    // Como tenemos seleccionada la opción de compilación incremental, debemos guardar esa información en algún archivo. Esta información se guarda en el archivo de caché que habilitamos con esta opción (buildcache) para poder realizar la compilación incremental y asegurarnos de que el proceso es más rápido cada vez que realizamos la compilación. 
+  }
+}
