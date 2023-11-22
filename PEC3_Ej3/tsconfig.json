@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es2015", 
+    "module": "commonjs", 
+    "outDir": "./dist",   
+    "rootDir": "./src", 
+    "strict": true,
+    "incremental": true,
+    "tsBuildInfoFile": "./buildcache",
+  }
+}
