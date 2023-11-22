@@ -1,7 +1,3 @@
-Sustituye /***/ por las instrucciones adecuadas que cumplan las operaciones 
-y salidas indicadas en los comentarios.
-
-
 interface Plane{
     model:string,
     npassengers:number
