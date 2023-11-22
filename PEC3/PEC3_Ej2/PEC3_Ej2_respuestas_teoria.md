@@ -2,11 +2,13 @@
 
 **Archivo code1.ts** 
 Hemos modificado los tipos de todas las variables para que muestren en el error. Como vemos, debajo de cada variable aparecee un subrayado rojo indicando que el tipo asignado no se corresponde con el introducido. Así, para la variable a, que es de tipo numérico, la hemos establecido manualmente como cadena. Para b y d, les hemos asignado manualmente el tipo booleano, por lo que ahora también dan error. Para la variable c hemos creado una interfaz y asignado tipos a cada propiedad, por lo que ahora las propiedades de la variable c también dan error. 
-En la imagen 1 vemos todo el código resaltado y en la imagen 2 vemos un ejemplo del error respecto de la propiedad apple. 
+En la figura 1 vemos todo el código resaltado y en la figura 2 vemos un ejemplo del error respecto de la propiedad apple. 
 
-![Imagen 1](./img/img1.png)
+![Figura 1](./img/img1.png)
+Figura 1
+![Figura 2](./img/img2.png)
+Figura 2
 
-![Imagen 2](./img/img2.png)
 
 
 
