@@ -23,3 +23,10 @@ myHangar['H789']={
  * 123Z:airbus(200)
  * H789:boeing(151)
  */
+
+for (const key in myHangar) {
+    if (myHangar.hasOwnProperty(key)) {
+        const plane = myHangar[key];
+        console.log(`${key}:${plane.model}(${plane.npassengers})`);
+    }
+}
