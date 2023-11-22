@@ -1,8 +1,12 @@
+// Sustituye /***/ por las instrucciones adecuadas que cumplan las operaciones  y salidas indicadas en los comentarios.
+
 abstract class Animal {
     static population: number = 0;
+
     constructor() {
         Animal.population++;
     }
+
     public abstract sound(): void;
 }
 
@@ -17,20 +21,24 @@ class Dog extends Animal {
     public iamadog() {
         console.log('yes, this is a dog');
     }
+
+    public sound(): void {
+        console.log('WOW');
+    }
 }
 
 class Cat extends Animal {
     gender: string;
-    
+
     constructor(gender: string) {
-        // Llama al constructor de la clase base (Animal).
         super();
         this.gender = gender;
     }
+
     public sound(): void {
         console.log('MEOW');
     }
-    
+
     public iamacat() {
         console.log('yes, this is a cat');
     }
@@ -42,11 +50,15 @@ animals.push(new Dog('white'));
 animals.push(new Cat('female'));
 animals.push(new Dog('black'));
 
-for(let animal of animals){
-    /***/
-    
-
+for (let animal of animals) {
+    animal.sound(); // Llama al método sound() de la clase correspondiente
+    if (animal instanceof Cat) {
+        (animal as Cat).iamacat();
+    } else if (animal instanceof Dog) {
+        (animal as Dog).iamadog();
+    }
 }
+
 /**  loop prints these lines
 MEOW
 yes, this is a cat
