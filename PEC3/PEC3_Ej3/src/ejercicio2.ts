@@ -6,7 +6,11 @@ interface Plane{
     model:string,
     npassengers:number
 }
-/***/
+
+interface HangarHash {
+    [key: string]: Plane;
+}
+
 
 let myHangar:HangarHash = {}
 
